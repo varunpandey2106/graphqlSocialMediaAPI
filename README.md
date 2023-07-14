@@ -1,6 +1,6 @@
 # graphqlSocialMediaAPI
 
-Welcome to graphqlSocialMediaAPI, a GraphQL API built using Graphene Django.
+Welcome to graphqlSocialMediaAPI, a GraphQL API (being)built using Graphene Django.
 
 ## Introduction
 
