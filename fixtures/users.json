@@ -14,5 +14,23 @@
       "name": "Bruce Wayne",
       "followers": [1]
       }
-    }
+    },
+
+    {
+      "model": "graphql_API.Post",
+      "pk": 1,
+      "fields": {
+        "content": "i am a backend dev!",
+        "created_by": 1
+      }
+     },
+     {
+      "model": "graphql_API.Post",
+      "pk": 2,
+      "fields": {
+        "content": "I AM BATMAN!",
+        "created_by": 2
+      }
+     }
 ]
+
