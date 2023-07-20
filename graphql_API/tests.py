@@ -88,7 +88,7 @@ class GraphQLUserTest(TestCase):
                 followers {
                   name
                 }
-                postSet {
+                post {
                   content
                 }
               }

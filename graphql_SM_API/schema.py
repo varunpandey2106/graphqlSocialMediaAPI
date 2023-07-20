@@ -1,22 +1,29 @@
 import graphene
 from graphene_django import DjangoObjectType
 from graphql_API import models
-from django.urls import pat h
+from django.urls import path
 
 class User(DjangoObjectType):
     class Meta:
         model=models.User
+
+class Post(User):
+    class Meta:
+        model=models.User
+
 
 class UserInput(graphene.InputObjectType):
     name=graphene.String()
 
 
 class UserType(DjangoObjectType):
-    postSet = graphene.List("path.to.PostType")
+    postSet = graphene.List("graphql_SM_API.schema.PostType")
 
     class Meta:
         model = models.User
         fields = ("id", "name", "postSet", "followers")
+
+
 
 class CreateUser(graphene.Mutation):
     class Arguments:
